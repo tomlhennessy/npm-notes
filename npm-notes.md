@@ -56,3 +56,42 @@
     • Common predefined scripts include 'start' and 'test'
     • Custom scripts can be defined for specific project needs
     • Run scripts using __'npm run script-name'__
+
+
+# CommonJS Modules:
+
+• Organise code into multiple files for better maintainability and scalability
+• Each JavaScript file in Node.js defines a module
+• Modules can be local (within your project) or external (like built-in Node.js modules)
+• Use __'module.exports'__ to export items from a module
+• Use __'require()'__ to import items from a module
+• Later, you can also use modules in JavaScript for browser-side scripting
+
+* Exporting from a Module:
+    • Option A: Assign an object to __'module.exports'__ with properties representing items to be exported
+    • Option B: Set properties on __'module.exports'__ directly
+    • Option C: Use the __'exports'__ shortcut, equivalent to __'module.exports'__
+
+* Importing with 'require()':
+    • Use __'require()'__ to import items from other modules
+    • Provide a relative path to the module you want to import
+    • File extensions (like '.js') ar not necessary
+
+* Importing Multiple Items:
+    • Imported items are properties of the exported object
+    • Extract properties using object destructuring or direct assignment
+
+* Importing Single Items:
+    • If a module exports a single item, it's returned directly by __'require'__
+    • No need for object destructuring
+
+* Folder Modules:
+    • A folder with an __'index.js'__ file can be loaded as a module
+    • Use the folder name to import, Node.js looks for __'index.js'__ automatically
+    • Useful for organising related files into a module
+
+* Summary:
+    • Learned how to structure a Node.js applications with local modules
+    • Understand exporting and importing mechanisms
+    • Recognise different export styles and when to use them
+    • Note the ability to import folders as modules, with __'index.js'__ acting as the entry point
