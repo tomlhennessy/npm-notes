@@ -95,3 +95,21 @@
     • Understand exporting and importing mechanisms
     • Recognise different export styles and when to use them
     • Note the ability to import folders as modules, with __'index.js'__ acting as the entry point
+
+
+# Using Modules in Node.js
+
+• Node.js facilitates the use of multiple files in applications for better organisation and modularity
+• Local modules are created by defining JavaScript files within a project, each focusing on a specific functionality
+• Core modules provided by Node.js extend its functionalities, including file system operations, HTTP server creation, etc.
+• Third-party modules, managed by npm, offer additional functionalities and are crucial in building Node.js applications
+• Node.js supports two module systems: CommonJS and ES Modules. CommonJS is more prevalent currently
+• To export items from a module, use the __'module.exports'__ property, either by setting properties on it or by assigning a new object to it
+• Importing iterms from a module is done using the __'require()'__ function, specifying a path to the module file
+• Destructuring can simplify imports, allowing you to directly extract the needed items from the imported module
+
+* Key Takeaways:
+    1. Module Structure: Node.js supports a modular approach to code organisation, crucial for scalable applications
+    2. Exporting: Use __'module.exports'__ to export items from a module, ensuring they are accessible to other parts of the application
+    3. Importing: Utilise __'require()'__ to import items from modules, specifying the path to the module file
+    4. Stylistic Choices: Choices like using destructuring for imports are based on personal preference and team conventions
